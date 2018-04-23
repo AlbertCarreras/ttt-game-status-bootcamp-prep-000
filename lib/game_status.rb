@@ -37,3 +37,6 @@ def won?(board)
   result
 
 end
+
+def full?(board)
+  board.find(" ")

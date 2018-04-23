@@ -22,4 +22,7 @@ def won(board)
         win_combination
       elsif board[win_combination][0] == "O" && board[win_combination][1] == "O" && board[win_combination][2] == ")" 
         "O won in the top row"
+        win_combination
+      end
+  end
 end

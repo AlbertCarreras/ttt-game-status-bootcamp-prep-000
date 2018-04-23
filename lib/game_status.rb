@@ -39,6 +39,6 @@ def won?(board)
 end
 
 def full?(board)
-  board.any? { |word| word.length >= 3 }
+  board.any? { |value| value = " " }
 end
   

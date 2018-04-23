@@ -61,4 +61,8 @@ def over?(board)
   end
   status
 end
-    
+
+def winner(board)
+  if won?(board) != false
+    result[0]
+  end

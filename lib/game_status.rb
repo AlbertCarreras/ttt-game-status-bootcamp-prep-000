@@ -44,11 +44,11 @@ end
   
 def draw?(board)
   status = ""
-  if !won?(board) == false && full(board) == true
+  if won?(board) == false && full(board) == false
       status = true
-    elsif !won?(board) && !full(board)
+    elsif won?(board) == false && full(board) == true
       status = false
-    elsif won?(board)
+    elsif won?(board) != false 
      status = false
    end
    status

@@ -39,4 +39,4 @@ def won?(board)
 end
 
 def full?(board)
-  board.find(" ")
+  board.any?(" ")

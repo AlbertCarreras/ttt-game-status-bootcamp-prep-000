@@ -16,15 +16,15 @@ WIN_COMBINATIONS = [
   
 def won?(board) 
   WIN_COMBINATIONS.each do |win_combination|
+    result = ""
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
     win_index_3 = win_combination[2]
-    position_1 = win_combination[0]
-    position_2 = win_combination[1]
-    position_3 = win_combination[2]
+    position_1 = board[win_index_1]
+    position_2 = board[win_index_2]
+    position_3 = board[win_index_3]
 
-      result = ""
-      if board[position_1] == "X" && board[position_2] == "X" && board[position_3] == "X" 
+    if board[position_1] == "X" && board[position_2] == "X" && board[position_3] == "X" 
         "X won in the top row"
         result = win_combination
       elsif board[position_1] == "O" && board[position_2] == "O" && board[position_3] == "O"

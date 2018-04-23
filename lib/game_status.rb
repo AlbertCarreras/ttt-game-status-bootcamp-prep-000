@@ -39,7 +39,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.none? { |value| value = " " }
+  board.none? { |value| value == " " }
 end
   
 def draw?(board)

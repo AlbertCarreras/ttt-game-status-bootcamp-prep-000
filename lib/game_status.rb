@@ -64,6 +64,6 @@ end
 
 def winner(board)
   if won?(board) != false
-    board[win_index_1]
+    board[won?(board)[0]]
   end
 end

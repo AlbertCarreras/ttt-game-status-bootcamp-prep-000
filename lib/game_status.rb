@@ -38,7 +38,7 @@ def won?(board)
 
 end
 
-def full?(board)
+def full?
   board.none?(" ")
 end
   

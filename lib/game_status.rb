@@ -24,10 +24,8 @@ def won?(board)
     position_3 = board[win_index_3]
 
     if position_1 == "X" && position_2 == "X" && position_3 == "X" 
-        "X won in the top row"
         win_combination
       elsif board[position_1] == "O" && board[position_2] == "O" && board[position_3] == "O"
-        "O won in the top row"
         win_combination
       else 
         false

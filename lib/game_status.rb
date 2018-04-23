@@ -54,4 +54,11 @@ def draw?(board)
    status
  end
     
+def over?(board)
+  status = ""
+  if won?(board) != false || draw?(board) == true || full?(board) == true
+    status = true
+  end
+  status
+end
     

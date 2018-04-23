@@ -42,3 +42,8 @@ def full?(board)
   board.any? { |value| value = " " }
 end
   
+def draw?(board)
+  if won?(board) && full(board)
+    elsif won?(board) && full(board)
+    
+    

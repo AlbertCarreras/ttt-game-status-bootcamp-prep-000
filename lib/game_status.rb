@@ -15,21 +15,19 @@ WIN_COMBINATIONS = [
   ]
   
 def won?(board) 
-  WIN_COMBINATIONS.each do |win_combination|
-    win_index_1 = win_combination[0].to_i
-    win_index_2 = win_combination[1].to_i
-    win_index_3 = win_combination[2].to_i
-    position_1 = board[win_index_1]
-    position_2 = board[win_index_2]
-    position_3 = board[win_index_3]
-
-    if position_1 == "X" && position_2 == "X" && position_3 == "X" 
-        win_combination
-      elsif board[position_1] == "O" && board[position_2] == "O" && board[position_3] == "O"
-        win_combination
-      else 
-
-    end
+ if WIN_COMBINATIONS.each do |win_combination|
+      win_index_1 = win_combination[0].to_i
+      win_index_2 = win_combination[1].to_i
+      win_index_3 = win_combination[2].to_i
+      position_1 = board[win_index_1]
+      position_2 = board[win_index_2]
+      position_3 = board[win_index_3]
+  
+      if position_1 == "X" && position_2 == "X" && position_3 == "X" 
+          win_combination
+        elsif board[position_1] == "O" && board[position_2] == "O" && board[position_3] == "O"
+          win_combination
+      end
     
   end
 
